@@ -1,0 +1,11 @@
+{% extends "base_page.html" %}
+
+{% block content %}
+  <h1>Название: {{ article.title }}</h1>
+
+  <p><strong>Автор:</strong> <a href="{{ article.author.get_absolute_url }}">{{ article.author }}</a></p>
+  <p><strong>Дата написания:</strong> {{ article.date_of_writing }}</p>
+  <p><strong>Описание:</strong> {{ article.description }}</p>
+  <p>{{ article.text_of_article }}</p>
+
+{% endblock %}

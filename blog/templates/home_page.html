@@ -1,0 +1,16 @@
+{% extends "base_page.html" %}
+
+{% block content %}
+<h1>Блог</h1>
+
+  <p>Добро пожаловать в <em>Мой Блог</em>.</p>
+
+<h2>Информация</h2>
+
+  <p>Блог имеет столько записей:</p>
+  <ul>
+    <li><strong>Статьи:</strong> {{ num_articles }}</li>
+    <li><strong>Авторы:</strong> {{ num_authors }}</li>
+  </ul>
+
+{% endblock %}
